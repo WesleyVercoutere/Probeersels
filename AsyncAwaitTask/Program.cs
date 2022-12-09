@@ -19,13 +19,14 @@ namespace AsyncAwaitTask
 
         public void Run()
         {
-            MakeFoodSync();
+            //MakeFoodSync();
             Console.WriteLine("");
-            MakeFoodAsync();
+            //MakeFoodAsync();
             Console.WriteLine("");
             MakeFoodAsync2();
             Console.WriteLine("");
-            MakeFoodAsync3();
+            //MakeFoodAsync3();
+            Console.WriteLine("Al veel te ver");
             Console.ReadLine();
         }
 
@@ -55,19 +56,19 @@ namespace AsyncAwaitTask
             Console.WriteLine($"Making food async takes {total} seconds");
         }
 
-        public void MakeFoodAsync2()
+        public async void MakeFoodAsync2()
         {
             var start = DateTime.Now;
             Console.WriteLine("Start making food async ook fout");
 
-            _fries.MakeAsync();
-            _meat.MakeAsync();
+            await _fries.MakeAsync();
+            await _meat.MakeAsync();
 
             var end = DateTime.Now;
             var total = end - start;
             Console.WriteLine($"Making food async takes {total} seconds");
 
-            Task.Delay(_fries.MakeTime + _meat.MakeTime).Wait(); // Niet nodig maar anders staat output tussen MakeFoodAsync3()
+            //Task.Delay(_fries.MakeTime + _meat.MakeTime).Wait(); // Niet nodig maar anders staat output tussen MakeFoodAsync3()
         }
 
         public void MakeFoodAsync3()
