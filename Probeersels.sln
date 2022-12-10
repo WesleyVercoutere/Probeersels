@@ -5,6 +5,8 @@ VisualStudioVersion = 17.4.33122.133
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsyncAwaitTask", "AsyncAwaitTask\AsyncAwaitTask.csproj", "{A99AC426-3CEF-49D8-89FE-B0B1190E605D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CallbackInterfaceDelegate", "CallbackInterfaceDelegate\CallbackInterfaceDelegate.csproj", "{6A08ED32-AE8A-4654-A69E-3FA32DDEF238}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{A99AC426-3CEF-49D8-89FE-B0B1190E605D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A99AC426-3CEF-49D8-89FE-B0B1190E605D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A99AC426-3CEF-49D8-89FE-B0B1190E605D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6A08ED32-AE8A-4654-A69E-3FA32DDEF238}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A08ED32-AE8A-4654-A69E-3FA32DDEF238}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A08ED32-AE8A-4654-A69E-3FA32DDEF238}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A08ED32-AE8A-4654-A69E-3FA32DDEF238}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
